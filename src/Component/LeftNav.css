@@ -7,7 +7,7 @@ nav{
     z-index:10;
     /* margin: 10px; */
     border-radius: 1rem;
-    height: 100vh;
+    height: max-content;
   }
   
   
@@ -48,10 +48,16 @@ nav{
     margin: 0 10px;
   }
   
+
   .menuopt>a:hover{
     color: var(--select);
     background: var(--lgred) ;
   }
+  .menuopt>a .active{
+    color: var(--select);
+    background: var(--lgred) ;
+  }
+
   .show{
     display:block
   }

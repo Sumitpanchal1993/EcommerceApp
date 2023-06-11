@@ -1,6 +1,151 @@
-.base{
+.base {
     background: white;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0 0 1rem 0;
+    min-width: 30vw;
+
+
     /* border: 1px solid black; */
+}
+
+.cartTabHD{
+    width: 100%;
+    /* border-collapse: collapse; */
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+.cartTabHD thead{
+    margin: 0 0 10px 0;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+    border: none;
+}
+.cartTabHD thead th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: lightgray;
+}
+.cartTabHD tbody td{
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+
+.cart_title {
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: 2fr auto 1fr auto;
+    
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+/* .cart_title>h3 {
+    padding: 0.5rem;
+
+} */
+
+/* .prd_row {
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: 2fr auto 1fr auto;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+} */
+.prd{
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.prd img{
+    width: 60px;
+    height: 60px;
+
+}
+
+.empty {
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.seeall{
+padding: 0.6rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-top: 1px dashed lightgrey;
+color: var(--select);
+cursor: pointer;
+}
+
+.otherinst{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bodybg);
+    padding: 0.6rem;
+}
+.otherinst>div>span{
+    color: var(--select);
+cursor: pointer;
+}
+.bill{
+    padding: 1rem;
+}
+.bill input{
+    margin: 0.6rem 0;
+    width: 90%;
+    height: 30px;
+    border: none;
+    background-color: var(--bodybg);
+    border-radius: 0.3rem;
+    padding: 4px 20px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+}
+.address>div>span{
+    color: var(--select);
+cursor: pointer;
+}
+.price{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartbtn{
+    margin: 1rem;
+    
+}
+.cartbtn>:nth-child(1){
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    width: 50%;
+    font-size: medium;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background: white;
+}
+.cartbtn>:nth-child(2){
+    border: 1px solid #c70a0a;
+    padding: 0.5rem 1.5rem;
+    width: 50%;
+    font-size: medium;
+    margin: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    background: maroon;
 }

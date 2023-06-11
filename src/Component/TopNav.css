@@ -34,11 +34,12 @@ header{
     border: none;
     padding: 12px 20px 12px 44px;
     margin: 0 10px;
+    font-size: medium;
     box-sizing: border-box;
     border-radius: 1rem;
     background: var(--bodybg);
     position: relative;
-    width: 30rem;
+    /* width: 25rem; */
   }
 
 

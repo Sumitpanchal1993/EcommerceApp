@@ -1,0 +1,10 @@
+
+.prdsub{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
