@@ -5,7 +5,7 @@ import Product from '../Component/Product'
 import { useState } from 'react'
 
 function AllProducts() {
-    const[view_prd, setView_prd] = useState(false)
+    const[view_prd, setView_prd] = useState(false)// to swap the view of category and Product Components
 
     const subCatClick = ()=>{
         setView_prd(true)

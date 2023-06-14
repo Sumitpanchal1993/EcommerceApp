@@ -1,11 +1,15 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './Product.css'
+import './Popup.css'
+import ProductDetail from '../Component/ProductDetail'
 
 
 const sample_prd_img = 'https://cpimg.tistatic.com/05772391/b/4/Canon-Printer-Ink.jpg'
 function Product(props) {
   const [prd_list, setPrd_list] = useState([])
+  const [popup, setPopup] = useState(false)
+
   let url = `https://elredtest.s3.amazonaws.com/reactAssignment/getProduct_${props.subCategoryId}.json`
   useEffect(() => {
     axios.get(url)
@@ -18,7 +22,7 @@ function Product(props) {
       <div className='prd_list'>
         {prd_list.map((item) => {
           return (
-            <div>
+            <div onClick={()=>{setPopup(true)}}>
             <span className="material-symbols-outlined">favorite</span>
               <img src={sample_prd_img} alt="" />
               <h4>{item.itemDescription}</h4>
@@ -27,6 +31,12 @@ function Product(props) {
           )
         })}
       </div>
+      {/* POPUP Component */}
+      {popup &&
+        <div className='popup'>
+          <ProductDetail/>
+      </div>
+      }
     </>
   )
 }

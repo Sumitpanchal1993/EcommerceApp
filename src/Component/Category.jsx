@@ -14,10 +14,18 @@ function Category(props) {
     const [viewCat, setViewCat] = useState(true)
     const [catId, setCatId] = useState()
     // const [subCat, setSubCat] = useState(false)
+
+    const hideOnClick = ()=>{
+        setViewCat(false);
+        setViewSubCat(false)
+    }  
+
     useEffect(() => {
         axios.get('https://elredtest.s3.amazonaws.com/reactAssignment/getCategories.json')
             .then((resp) => { setCategory(resp.data.result) })
     }, [])
+
+
     return (
         <>  
             { viewCat &&
@@ -73,7 +81,7 @@ function Category(props) {
 
 
             {viewSubCat &&
-                <SubCategory id={catId} func={props.subCatFunc} />
+                <SubCategory id={catId} func={props.subCatFunc} func2={hideOnClick} />
             }
 
         </>

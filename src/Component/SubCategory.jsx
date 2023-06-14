@@ -19,7 +19,7 @@ function SubCategory(props) {
             <div className='prdsub'>
                 {subData.map((item, index) => {
                     return (
-                        <div key={index}  onClick={()=>{setSubCatId(item.subCategoryId);props.func()}}>
+                        <div key={index}  onClick={()=>{setSubCatId(item.subCategoryId);props.func();props.func2()}}>
                             <img src={item.subCategoryImageURL} alt="" />
                             <p>{item.subCategoryName}</p>
                         </div>
