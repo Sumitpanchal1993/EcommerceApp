@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import './Main.css'
 import Home from '../Pages/Home'
@@ -11,8 +11,11 @@ import Favourite from './Favourite';
 import NewArrival from './NewArrival';
 import ProductDetails from '../Component/ProductDetail'
 
+
 //  let sample_img = 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/categories/category1.png'
 function Main() {
+  
+
   const myState = useSelector((arg) => arg.changeNumber);
   const dispatch = useDispatch();
   console.log(myState)
@@ -28,8 +31,7 @@ function Main() {
           <Route path='favourite' element={<Favourite />}></Route>
           <Route path='newarrivals' element={<NewArrival />}></Route>
           <Route path='productdetails' element={<ProductDetails />}></Route>
-
-
+          {/* <Route path='productlist' element={<Product />}></Route>        */}
 
         </Routes>
         {/* <button onClick={() => dispatch(decNumber())}>Decrement</button>

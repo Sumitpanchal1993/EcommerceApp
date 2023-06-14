@@ -3,18 +3,41 @@ import './BottomTab.css'
 const tab_data = [
     {
         id: 0,
-        imagesrc: 'some text here',
+        imagesrc: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/subCategories/subcategory3.png',
+        title: ' Toshiba'
+    },
+    {
+        id: 1,
+        imagesrc: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/subCategories/subcategory3.png',
+        title: ' Toshiba'
+    },
+    {
+        id: 2,
+        imagesrc: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/subCategories/subcategory3.png',
+        title: ' Toshiba'
+    },
+    {
+        id: 3,
+        imagesrc: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/subCategories/subcategory3.png',
         title: ' Toshiba'
     }
 ]
 
 function BottomTab() {
     return (
-        <div className=' flexcen bottomtab'>
-            <div className='flexcen'>
-                <span className="material-symbols-outlined">home</span>
+        <>
+            <div className=' flexcen bottomtab'>
+                {tab_data.map((item) => {
+                    return (
+                        <div className=''>
+                            <img src={item.imagesrc} alt="" />
+                            <p>{item.title}</p>
+                        </div>
+                    )
+                })}
+
             </div>
-        </div>
+        </>
     )
 }
 

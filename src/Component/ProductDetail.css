@@ -19,7 +19,7 @@
   margin:15px;
   text-align: center;
   border-radius: 1rem;
-  box-shadow: 0 0 20px black inset;
+  box-shadow: 0 0 10px grey;
 }
 .big_prd_img>img{
    min-width: 300px;
@@ -72,13 +72,17 @@
 }
 
 .color input{
-  padding:0.5rem;
+  padding:0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
-  background: lightgray;
-}
+  background: var(--bodybg);
+ }
 
 .color p{
   color:red;
   font-size: 0.7rem;
+}
+
+.color span{
+  margin: 1rem;
 }

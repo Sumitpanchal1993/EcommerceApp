@@ -34,7 +34,10 @@
     padding-bottom: 12px;
 }
 
-
+.cartTabHD tbody span{
+    cursor: pointer;
+    color: var(--select);
+}
 
 .cart_title {
     display: grid;
@@ -130,7 +133,7 @@ cursor: pointer;
     margin: 1rem;
     
 }
-.cartbtn>:nth-child(1){
+.cartbtn> button{
     border: 1px solid black;
     padding: 0.5rem 1.5rem;
     width: 50%;
@@ -138,14 +141,15 @@ cursor: pointer;
     margin: 0.5rem;
     border-radius: 0.5rem;
     background: white;
+    cursor: pointer;
 }
+
 .cartbtn>:nth-child(2){
-    border: 1px solid #c70a0a;
-    padding: 0.5rem 1.5rem;
-    width: 50%;
-    font-size: medium;
-    margin: 0.5rem;
+    border: 1px solid black;   
+    background: white;
+}
+.cartbtn>:nth-child(1){
+    border: 1px solid #c70a0a;   
     color: white;
-    border-radius: 0.5rem;
     background: maroon;
 }

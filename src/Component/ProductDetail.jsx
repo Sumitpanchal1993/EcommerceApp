@@ -20,7 +20,7 @@ export default function ProductDetail() {
       .then((res) => { setPrdData(res.data.result) })
   }, [])
 
-  console.log(prdData)
+ 
 
   return (
     <>
@@ -60,9 +60,9 @@ export default function ProductDetail() {
             </div>
             <div className='color' onClick={selectOpn}>
               <h4>Please Select Colour Description</h4>
-              {item.variants.map((colors) => {
+              {item.variants.map((colors, index) => {
                 return (
-                  <div className='color_opn'>{colors.colorDescription}</div>
+                  <div className='color_opn' key={index}>{colors.colorDescription}</div>
                 )
               })
               }
@@ -92,7 +92,7 @@ export default function ProductDetail() {
         <input type='checkBox' />
         <span>Need Urgent Order</span>
       </div>
-      <div>
+      <div className='cartbtn flexcen'>
         <button className='splBtn'>Add</button>
       </div>
 

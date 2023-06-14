@@ -12,6 +12,7 @@ const menuList = [
   { title: 'Favorite', icon: 'favorite', link: '/favourite' },
   { title: 'New Arrivals', icon: 'verified', link: '/newarrivals' },
   { title: 'Product', icon: 'verified', link: '/productdetails' },
+  { itle: 'Product', icon: 'verified', link: '/productlist' }
 ]
 
 function LeftNav() {

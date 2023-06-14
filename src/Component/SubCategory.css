@@ -8,3 +8,23 @@
     justify-content: space-between;
     margin-top: 1rem;
 }
+
+.prdsub>div:hover{
+    border: 3px solid red;
+    border-radius: 1rem;
+}
+.prdsub>div{
+    position: relative;
+    border: 3px solid white;
+    padding: 5px;
+
+}
+.prdsub>div>p{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    
+}
+.prdsub>div>img{
+    width: 10rem;
+}

@@ -1,0 +1,40 @@
+.prd_list{
+   
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.prd_list>div{
+    border: 2px solid grey;
+    padding: 0.5rem;
+    width: 11rem;
+    height: 11rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prd_list>div>span{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.prd_list>div>img{
+    width: 120px;
+    
+}
+
+.prd_list>div>p{
+    font-size: small;
+    color: grey;
+}
