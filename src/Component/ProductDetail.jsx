@@ -4,12 +4,6 @@ import axios from 'axios'
 
 import './ProductDetail.css'
 
-function selectOpn(e) {
-  let k = document.getElementsByClassName('.color_opn')
-  console.log('Clicked')
-  console.log(k)
-
-}
 
 let icon = 'https://tiimg.tistatic.com/fp/1/005/733/6-color-refill-ink-for-epson-desktop-printer-l800-l801--945.jpg'
 let bigimg = 'https://www.nationaltenders.com/upload/events/1481622198_1467973744_Krishna2.jpg'
@@ -18,9 +12,7 @@ export default function ProductDetail() {
   useEffect(() => {
     axios.get('https://elredtest.s3.amazonaws.com/reactAssignment/getProduct_643e7a9fdb684bac5851d8e9.json')
       .then((res) => { setPrdData(res.data.result) })
-  }, [])
-
- 
+  }, []) 
 
   return (
     <>
@@ -58,7 +50,7 @@ export default function ProductDetail() {
             <div>
               <p>Google Fonts is a library of 1531 open source font families and APIs for convenient use via CSS and Android. The library also has delightful and beautifully crafted icons for common actions and items. Download them for use in your digital products for Android, iOS, and web.</p>
             </div>
-            <div className='color' onClick={selectOpn}>
+            <div className='color'>
               <h4>Please Select Colour Description</h4>
               {item.variants.map((colors, index) => {
                 return (

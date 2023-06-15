@@ -27,9 +27,9 @@ function BottomTab() {
     return (
         <>
             <div className=' flexcen bottomtab'>
-                {tab_data.map((item) => {
+                {tab_data.map((item, index) => {
                     return (
-                        <div className=''>
+                        <div className='' key={index}>
                             <img src={item.imagesrc} alt="" />
                             <p>{item.title}</p>
                         </div>

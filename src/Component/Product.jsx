@@ -18,13 +18,12 @@ function Product(props) {
       .then((resp) => { setPrd_list(resp.data.result) })
   }, [props.subId])
 
-  console.log(prd_list)
   return (
     <>
       <div className='prd_list'>
         {prd_list.map((item, index) => {
           return (
-            <div onClick={()=>{setPopup(true)}}>
+            <div onClick={()=>{setPopup(true)} } key={index}>
             <span className="material-symbols-outlined">favorite</span>
               <img src={sample_prd_img} alt="" />
               <h4>{item.itemDescription}</h4>

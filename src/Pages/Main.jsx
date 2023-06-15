@@ -18,7 +18,7 @@ function Main() {
 
   const myState = useSelector((arg) => arg.changeNumber);
   const dispatch = useDispatch();
-  console.log(myState)
+  
 
 
   return (
