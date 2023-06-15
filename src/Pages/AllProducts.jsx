@@ -5,12 +5,12 @@ import Product from '../Component/Product'
 import { useState } from 'react'
 
 function AllProducts() {
-    const[view_prd, setView_prd] = useState(false)// to swap the view of category and Product Components
-
-    const subCatClick = ()=>{
-        setView_prd(true)
+    const [view_prd, setView_prd] = useState(false)// to swap the view of category and Product Components
+    const [prdListID, setprdListID] = useState('')
+    const subCatClick = (childData) => {
+      setView_prd(true)
+      setprdListID(childData)
     }
-
 
     return (
         <>
@@ -18,7 +18,7 @@ function AllProducts() {
                 <MiddleMain heading='All Products' />
                 <Category subCatFunc={subCatClick}/>                
                 {view_prd &&                
-                <Product/>}
+                <Product subId={prdListID}/>}
             </div>
 
 

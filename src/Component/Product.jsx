@@ -6,6 +6,8 @@ import ProductDetail from '../Component/ProductDetail'
 
 
 const sample_prd_img = 'https://cpimg.tistatic.com/05772391/b/4/Canon-Printer-Ink.jpg'
+
+
 function Product(props) {
   const [prd_list, setPrd_list] = useState([])
   const [popup, setPopup] = useState(false)
@@ -14,13 +16,13 @@ function Product(props) {
   useEffect(() => {
     axios.get(url)
       .then((resp) => { setPrd_list(resp.data.result) })
-  }, [])
+  }, [props.subId])
 
   console.log(prd_list)
   return (
     <>
       <div className='prd_list'>
-        {prd_list.map((item) => {
+        {prd_list.map((item, index) => {
           return (
             <div onClick={()=>{setPopup(true)}}>
             <span className="material-symbols-outlined">favorite</span>
