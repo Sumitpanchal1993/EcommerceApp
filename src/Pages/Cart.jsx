@@ -13,7 +13,7 @@ const rates = { SGST: 9, CGST: 9, IGST: 9 }
 function Cart() {
     const [cartItem, setCartItem] = useState(cdata)
     const [cartis, setCartis] = useState(false)  //for empty cart
-    const [total, setTotal] = useState(20000)
+    const [total, setTotal] = useState(0)
 
  
 
@@ -37,6 +37,19 @@ function Cart() {
     // function to Clearcart
     const clearCart =()=>{setCartItem([]); setCartis(true) }
 
+
+     //function to collapse the cart list
+     function listColapse (){
+        if(document.getElementById('colList').style.height == '23rem'){
+            document.getElementById('colList').style.height = 'auto';
+            document.getElementById('colList').style.transition= 'height 2s ease-out';
+        }
+        else{
+            document.getElementById('colList').style.height = '23rem'
+        }
+      }
+
+
     useEffect(()=>{bill(total, rates)}, [total])
     // bill(total, rates)
     return (
@@ -49,7 +62,7 @@ function Cart() {
                     <CartTable cartItem={cartItem} />
                 }
                 {!cartis && 
-                <Bill clrfunc = {clearCart} />
+                <Bill clrfunc = {clearCart}  viewfunc= {listColapse} />
                 }
 
             </div>

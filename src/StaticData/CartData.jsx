@@ -7,7 +7,7 @@
         volume: '1l',
         packing: 'RGBY',
         qty: 10,
-        price: '$500'
+        price: '500'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@
         volume: '1l',
         packing: 'RGBY',
         qty: 10,
-        price: '$500'
+        price: '500'
     },
     {
         id: 3,
@@ -27,7 +27,7 @@
         volume: '1l',
         packing: 'RGBY',
         qty: 10,
-        price: '$500'
+        price: '500'
     },
     {
         id: 4,
@@ -37,6 +37,43 @@
         volume: '1l',
         packing: 'RGBY',
         qty: 10,
-        price: '$500'
-    }
+        price: '500'
+    },
+    {
+        id: 5,
+        image: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/categories/category1.png',
+        name: 'Product Name',
+        color: 'greeen',
+        volume: '1l',
+        packing: 'RGBY',
+        qty: 10,
+        price: '500'
+    },    {
+        id: 6,
+        image: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/categories/category1.png',
+        name: 'Product Name',
+        color: 'greeen',
+        volume: '1l',
+        packing: 'RGBY',
+        qty: 10,
+        price: '500'
+    },    {
+        id: 7,
+        image: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/categories/category1.png',
+        name: 'Product Name',
+        color: 'greeen',
+        volume: '1l',
+        packing: 'RGBY',
+        qty: 10,
+        price: '500'
+    },    {
+        id: 8,
+        image: 'https://newpublicbucket.s3.us-east-2.amazonaws.com/productListing/categories/category1.png',
+        name: 'Product Name',
+        color: 'greeen',
+        volume: '1l',
+        packing: 'RGBY',
+        qty: 10,
+        price: '500'
+    },
 ]

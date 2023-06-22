@@ -9,9 +9,9 @@
 }
 
 .cartTabHD{
-    width: 100%;
+    /* width: 100%; */
     /* border-collapse: collapse; */
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     border-radius: 1rem 1rem 0 0;
 }
 
@@ -153,3 +153,30 @@ cursor: pointer;
     color: white;
     background: maroon;
 }
+
+/* Experiment */
+.cartHead{
+    border-radius: 1rem 1rem 0  0;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: lightgrey;
+    text-align:center;
+    font-weight: bold;
+  }
+  
+  .cartRow{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    /* gap: 20px; */
+  }
+  
+  #colList{
+    height:23rem;
+    overflow:hidden;
+    transition: height 2s ease-out;
+  }
+  

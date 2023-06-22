@@ -3,7 +3,7 @@ import React from 'react'
 function Bill(props) {
   return (
     <>
-                    <div className='seeall'><span>See All</span><span className="material-symbols-outlined">chevron_right</span></div>
+                    <div className='seeall' onClick={props.viewfunc}><span>See All</span><span className="material-symbols-outlined">chevron_right</span></div>
                     <div className='otherinst'>
                         <h4>Other Instruction</h4>
                         <div className='flexcen'>
@@ -12,7 +12,7 @@ function Bill(props) {
                     </div>
                     <div className='bill'>
                         <div> <h4>Purchase Order</h4></div>
-                        <div><input type="text" name="" id="" /></div>
+                        <div><input type="text" name="" id="" placeholder='12345678910' /></div>
                         <div className='address'>
                             <h4>Address</h4>
                             <div className='flexcen'>
