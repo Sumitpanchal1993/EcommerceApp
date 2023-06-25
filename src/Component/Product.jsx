@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './Product.css'
-import './Popup.css'
 import ProductDetail from '../Component/ProductDetail'
+import Cart from '../Pages/Cart'
 
 
 const sample_prd_img = 'https://cpimg.tistatic.com/05772391/b/4/Canon-Printer-Ink.jpg'
@@ -23,8 +23,8 @@ function Product(props) {
       <div className='prd_list'>
         {prd_list.map((item, index) => {
           return (
-            <div onClick={()=>{setPopup(true)} } key={index}>
-            <span className="material-symbols-outlined">favorite</span>
+            <div onClick={() => { setPopup(true) }} key={index}>
+              <span className="material-symbols-outlined">favorite</span>
               <img src={sample_prd_img} alt="" />
               <h4>{item.itemDescription}</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -35,8 +35,18 @@ function Product(props) {
       {/* POPUP Component */}
       {popup &&
         <div className='popup'>
-          <ProductDetail/>
-      </div>
+          <div className='close'>
+            <span className="material-symbols-outlined" onClick={() => {setPopup(false)}}>close</span>
+          </div>
+          <div>
+            <ProductDetail />
+          </div>
+          <hr />
+          <div>
+            <Cart />
+          </div>
+
+        </div>
       }
     </>
   )

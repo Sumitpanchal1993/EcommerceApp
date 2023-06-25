@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import './Cart.css'
 import EmptyCart from '../Component/EmptyCart'
 import { cdata } from '../StaticData/CartData'
@@ -40,7 +41,7 @@ function Cart() {
 
      //function to collapse the cart list
      function listColapse (){
-        if(document.getElementById('colList').style.height == '23rem'){
+        if(document.getElementById('colList').style.height === '23rem'){
             document.getElementById('colList').style.height = 'auto';
             document.getElementById('colList').style.transition= 'height 2s ease-out';
         }

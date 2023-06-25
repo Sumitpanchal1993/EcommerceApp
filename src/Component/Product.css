@@ -38,3 +38,30 @@
     font-size: small;
     color: grey;
 }
+
+/* PopUp functionality */
+.popup{
+/* border: 2px solid red; */
+position: absolute;
+z-index: 10;
+top: 0;
+right:0;
+background: white;
+display: flex;
+width: 82%;
+padding: 2rem 1rem;
+}
+.close{
+    z-index: 13;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+.popup>div{
+    z-index: 12;
+}
+
+hr{
+    margin: 1rem;
+}

@@ -5,6 +5,8 @@ import Leftnav from './Component/LeftNav';
 import Main from './Pages/Main';
 import Cart from './Pages/Cart';
 import BottomTab from './Component/BottomTab';
+import Demo from './Component/Demo';
+
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
             <Main />
             <Cart />
             <BottomTab/>
-          </main>    
+          </main>   
+          <Demo/>
       </Router>
     </>
   );

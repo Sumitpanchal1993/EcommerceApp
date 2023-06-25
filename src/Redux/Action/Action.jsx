@@ -24,3 +24,13 @@ export const incNumber = () => {
     }
  
  }
+ export const addToCart = (itemDetails) => {
+    return {
+       type: "ADDTOCART",
+       payload: itemDetails
+ 
+    }
+ 
+ }
+
+
