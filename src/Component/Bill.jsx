@@ -54,6 +54,9 @@ function Bill(props) {
                         <button onClick={() => {props.clrfunc()}}>Clear Cart</button>
                         
                     </div>
+                    <div>
+                        <p></p>
+                    </div>
                 </>
   )
 }

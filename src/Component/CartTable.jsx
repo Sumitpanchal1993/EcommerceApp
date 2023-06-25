@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../Pages/Cart'
 
-function CartTable(props) {
+
+function CartTable() {
+ const {item, removeItem} = useContext(CartContext)
+ 
     return (
         <>
             <div id='colList'>
@@ -12,7 +16,7 @@ function CartTable(props) {
                         <div>Edit</div>
                     </div>
                     <div className='cartBody'>
-                        {props.cartItem.map((item, index, array) => {
+                        {item.map((item, index, array) => {
                             return (
                                 <div key={index} className='cartRow'>
                                     <div>
@@ -27,7 +31,7 @@ function CartTable(props) {
                                     <div>{item.qty}</div>
                                     <div>${item.price}</div>
                                     <div>
-                                        <span className="material-symbols-outlined" onClick={() => { }}>close</span>
+                                        <span className="material-symbols-outlined" onClick={() => {removeItem(item.id) }}>close</span>
                                     </div>
                                 </div>
                             )

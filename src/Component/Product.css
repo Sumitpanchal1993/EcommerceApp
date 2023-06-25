@@ -51,12 +51,12 @@ display: flex;
 width: 82%;
 padding: 2rem 1rem;
 }
+
 .close{
     z-index: 13;
     position: absolute;
     top: 5px;
     right: 5px;
-
 }
 .popup>div{
     z-index: 12;

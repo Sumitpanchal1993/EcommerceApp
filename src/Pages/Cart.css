@@ -3,9 +3,6 @@
     border-radius: 1rem;
     padding: 0 0 1rem 0;
     min-width: 30vw;
-
-
-    /* border: 1px solid black; */
 }
 
 .cartTabHD{
@@ -16,12 +13,12 @@
 }
 
 
-.cartTabHD thead{
+/* .cartTabHD thead{
     margin: 0 0 10px 0;
     border-radius: 1rem 1rem 0 0;
     text-align: center;
     border: none;
-}
+} 
 .cartTabHD thead th{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -37,7 +34,7 @@
 .cartTabHD tbody span{
     cursor: pointer;
     color: var(--select);
-}
+}*/
 
 .cart_title {
     display: grid;
@@ -172,6 +169,14 @@ cursor: pointer;
     align-items:center;
     justify-content: space-between;
     /* gap: 20px; */
+  }
+
+  .cartRow:nth-child(1){
+    min-width: 45%;
+  }
+  .cartRow span{
+    cursor: pointer;
+    color: var(--select);
   }
   
   #colList{

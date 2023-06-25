@@ -8,6 +8,8 @@ import BottomTab from './Component/BottomTab';
 import Demo from './Component/Demo';
 
 
+// export CartContext = createContext();
+
 function App() {
   return (
     <>
