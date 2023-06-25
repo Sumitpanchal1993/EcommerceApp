@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../Pages/Cart'
+
 
 function Bill(props) {
+    const {clear_cart} = useContext(CartContext)
+
   return (
     <>
                     <div className='seeall' onClick={props.viewfunc}><span>See All</span><span className="material-symbols-outlined">chevron_right</span></div>
@@ -51,7 +55,8 @@ function Bill(props) {
 
                     <div className='cartbtn flexcen'>
                         <button onClick={() => { alert('Order Placed') }}>Place Order</button>
-                        <button onClick={() => {props.clrfunc()}}>Clear Cart</button>
+                        <button onClick={() => {clear_cart()}}>Clear Cart</button>
+                        {/* <button onClick={() => {props.clrfunc()}}>Clear Cart</button> */}
                         
                     </div>
                     <div>

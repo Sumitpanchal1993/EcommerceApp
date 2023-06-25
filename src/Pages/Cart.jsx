@@ -18,6 +18,9 @@ export  const reducer = (state, action)=>{
             })
         };
     
+     case  'CLEAR_CART':
+        return {...state, item: []};
+    
        default:
         return state; 
     }
@@ -44,6 +47,14 @@ function Cart() {
         {type: 'REMOVE_ITEM',
         payload: id}
         )}
+    const clear_cart = ()=>{
+        return dispatch(
+        {type: 'CLEAR_CART'}
+        )}
+
+
+
+
  // Reducer Functions
  const [state, dispatch] = useReducer(reducer, initialState)
 
@@ -85,7 +96,7 @@ function Cart() {
     return (
         <>
 
-        <CartContext.Provider value={{...state, removeItem}}>
+        <CartContext.Provider value={{...state, removeItem, clear_cart}}>
             <div className="base">
                 {cartis &&
                     <EmptyCart />
