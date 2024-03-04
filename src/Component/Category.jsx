@@ -11,13 +11,14 @@ function Category(props) {
     const [category, setCategory] = useState([]) // to store the fetch data from api
     const [viewSubCat, setViewSubCat] = useState(false) // to show or hide the subcategory items
     const [viewCat, setViewCat] = useState(true)  // to view the sub-cateogry
-    const [catId, setCatId] = useState() //to set the clicked category ID
-    // const [subCat, setSubCat] = useState(false)
-
+    const [catId, setCatId] = useState() //to set the clicked category ID for fetching categoryID
+    // const [childData, setChildData] = useState('')
    
-    const hideOnClick = ()=>{
+   
+    const hideOnClick = (clk_id)=>{
         setViewCat(false);
         setViewSubCat(false)
+        // setChildData(clk_id)
     }  
 
 

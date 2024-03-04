@@ -5,7 +5,7 @@ import Leftnav from './Component/LeftNav';
 import Main from './Pages/Main';
 import Cart from './Pages/Cart';
 import BottomTab from './Component/BottomTab';
-import Demo from './Component/Demo';
+
 
 
 // export CartContext = createContext();
@@ -21,7 +21,7 @@ function App() {
             <Cart />
             <BottomTab/>
           </main>   
-          <Demo/>
+          
       </Router>
     </>
   );

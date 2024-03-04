@@ -12,6 +12,9 @@ function AllProducts() {
       setprdListID(childData)
     }
 
+    // console.log(prdListID)
+
+    
     return (
         <>
             <div className='basemiddle'>

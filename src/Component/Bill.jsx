@@ -4,7 +4,6 @@ import { CartContext } from '../Pages/Cart'
 
 function Bill(props) {
     const {clear_cart} = useContext(CartContext)
-
   return (
     <>
                     <div className='seeall' onClick={props.viewfunc}><span>See All</span><span className="material-symbols-outlined">chevron_right</span></div>

@@ -19,9 +19,9 @@ export default function ProductDetail() {
   let urlprd = 'https://elredtest.s3.amazonaws.com/reactAssignment/getProduct_643e7a9fdb684bac5851d8e9.json'
   useEffect(() => {
     axios.get(urlprd)
-      .then((res) => { setPrdData(res.data.result) })
+      .then((res) => { setPrdData(res.data.result)})
   }, []) 
-
+  
   return (
     <>
       {prdData.map((item, index) => {
