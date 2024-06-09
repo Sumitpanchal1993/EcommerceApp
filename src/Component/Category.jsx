@@ -23,13 +23,13 @@ function Category(props) {
 
 
     //to fetch data  from api 
-    const url1 = 'https://elredtest.s3.amazonaws.com/reactAssignment/getCategories.json'  // Api given
+    const url1 = 'https://fakestoreapi.com/products'  // Api given
     useEffect(() => {
         axios.get(url1)
-            .then((resp) => { setCategory(resp.data.result) })
+            .then((resp) => { setCategory(resp.data) })
     }, [])
 
-
+    console.log(category)
     return (
         <>  
             { viewCat &&
@@ -41,8 +41,8 @@ function Category(props) {
                     {category.map((item, index) => {
                         return (
                             <div key={index} onClick={() => { setCatId(item.categoryId); setViewSubCat(true) }}>
-                                <img src={item.categoryImageURL === '' ? imgout : item.categoryImageURL} alt="" />
-                                <p>{item.categoryName}</p>
+                                <img src={item.image === '' ? imgout : item.image} alt="" />
+                                <p>{item.category}</p>
                             </div>
                             )
                         })}

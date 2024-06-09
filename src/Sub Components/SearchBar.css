@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+}
+
+.search button {
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+  border: none;
+  cursor: pointer;  
+}
+
+.search input {
+  border: none;
+  padding: 0.8rem 1rem 0.8rem 3rem;
+  margin: 0 0.2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background: var(--bodybg);
+  outline: none;
+  
+}
+
+@media screen and (max-width:786px) {
+  .search input {
+    width: 9rem;
+}
+}
+  

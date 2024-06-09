@@ -26,9 +26,9 @@
 
 
 .cat div{
-    min-width: 100px;
+    min-width: 6rem;
     height: 100px;
-    line-height: 25px;    
+    /* line-height: 25px;     */
     padding: 5px;
     position: relative;
     text-align: center;
@@ -45,8 +45,10 @@
     height: 100%;
 }
 .cat div> p{
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 5%;
-    left: 14%;
+    border-radius: 10rem;
+    /* left: 14%; */
     color: white;
 }

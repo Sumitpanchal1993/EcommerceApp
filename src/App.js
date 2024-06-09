@@ -14,13 +14,18 @@ function App() {
   return (
     <>
       <Router>
+        <header>
           <TopNav />
+        </header>
           <main>
             <Leftnav /> 
-            <Main />
-            <Cart />
-            <BottomTab/>
-          </main>   
+            {/* <Main /> */}
+            {/* <Cart /> */}
+            {/* <BottomTab/> */}
+          </main>
+          <footer>
+
+          </footer>   
           
       </Router>
     </>

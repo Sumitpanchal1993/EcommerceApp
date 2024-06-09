@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './LeftNav.css'
-import Logo from '../Images/icons8-example-48.png'
 
 
 
@@ -17,12 +16,6 @@ function LeftNav() {
   return (
     <>
       <nav>
-        <div className='flexcen' id='logo'>
-          <img src={Logo} alt="logo" />
-          <h4>A.T. INKS</h4>
-        </div>
-
-
         <div>
           {menuList.map((item, index) => {
             return (
