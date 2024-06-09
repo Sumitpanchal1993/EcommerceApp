@@ -39,7 +39,7 @@ function UserLogin() {
               <ul>
                 <li><Link>My Profile</Link></li>
                 <li><Link>Orders</Link></li>
-                <li><Link>Cart</Link></li>
+                <li><Link to={"/cart"}>Cart</Link></li>
                 <li><Link>Wishlist</Link></li>
                 <li><Link onClick={()=>{setUserLogin(false);}}>Log Out</Link></li>                
               </ul>

@@ -1,4 +1,4 @@
-nav {
+.leftOption {
   width: max-content;
   overflow: hidden;
   background: white;
@@ -6,7 +6,6 @@ nav {
   margin: 10px;
   border-radius: 1rem;
   transition: all ease-in-out 0.3s;
-  height: 100vh;
 }
 
 .menuopt>a {
@@ -22,11 +21,8 @@ nav {
 
 .menuopt>a>p {
   margin: 0 10px;
-  display: none;
 }
-.menuopt>a>p:hover {
-  display: block;
-}
+
 
 
 .menuopt span:hover,
@@ -46,4 +42,10 @@ nav {
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width:786px) {
+  .leftOption{
+    display: none;
+  }
 }

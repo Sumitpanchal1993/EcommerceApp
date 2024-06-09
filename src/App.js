@@ -1,10 +1,10 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import TopNav from './Component/TopNav';
 import Leftnav from './Component/LeftNav';
 import Main from './Pages/Main';
 import Cart from './Pages/Cart';
-import BottomTab from './Component/BottomTab';
+
 
 
 
@@ -17,11 +17,12 @@ function App() {
         <header>
           <TopNav />
         </header>
-          <main>
+           <main>
             <Leftnav /> 
+        <Routes>
+           <Route path={'/cart'} element={<Cart/>}></Route>
+        </Routes>
             {/* <Main /> */}
-            {/* <Cart /> */}
-            {/* <BottomTab/> */}
           </main>
           <footer>
 

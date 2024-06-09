@@ -1,9 +1,8 @@
 .basemiddle{
     display: flex;
-    flex-direction: column;
-    /* gap: 2rem; */
+    flex-direction: column;   
     background: white;
     border-radius: 1rem;
     padding: 1rem;
-    /* border: 1px solid black; */
+    
 }

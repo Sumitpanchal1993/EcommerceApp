@@ -1,7 +1,6 @@
-
 main{
-width: 100vw;
-box-sizing: border-box;
+    display: flex;
+    
 }
 
 .mybtn{

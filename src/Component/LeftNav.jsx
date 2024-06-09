@@ -15,8 +15,7 @@ const menuList = [
 function LeftNav() {
   return (
     <>
-      <nav>
-        <div>
+        <div className='leftOption'>
           {menuList.map((item, index) => {
             return (
               <div className='menuopt' key={index} >
@@ -29,7 +28,6 @@ function LeftNav() {
           })}
 
         </div>
-      </nav>
 
     </>
   )
