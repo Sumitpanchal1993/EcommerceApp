@@ -23,7 +23,7 @@
 }
 
 .prdDetail {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: last baseline;
