@@ -1,19 +1,16 @@
 .cartItemBase {
   display: flex;
-  position: relative;
   margin: 0.8rem 0.1rem;
+  align-items: center;
   background: white;
   padding: 0.5rem;
   border-radius: 1rem;
+  box-shadow: 0 0 10px 5px var(--bodybg);
+  min-width: 46rem;
+  width: 60%;
 }
 .cartItemBase:hover {
-  box-shadow: 0 0 15px var(--purple);
-}
-
-.cartItemBase > span {
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
+  box-shadow: 0 0 10px var(--purple);
 }
 
 .prdImage img {
@@ -23,7 +20,6 @@
 }
 
 .prdDetail {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: last baseline;
@@ -42,34 +38,58 @@
   font-size: 10px;
 }
 
-.selection {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.selection span {
+  margin-left: 0.3rem;
+  font-size: small;
 }
 
 .selection span:nth-child(3) {
   font-size: 10px;
+  color: red;
+  border: 1px solid red;
+  padding: 2px;
 }
 
 .selection label{
-    margin:  0 5px;
+    margin-right: 5px;
 }
 
 select{
     outline: none;
     border: none;
     padding: 5px;
-    background: var(--bodybg)
+    background: var(--bodybg);
+    border-radius: 0.5rem;
 }
 
 .itemPrice{
     display: flex;
     align-items: baseline;
     justify-content: baseline;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
+.itemPrice s {
+  color: grey;
+  font-size: small;
+}
+.itemPrice span:nth-child(3) {
+  color: red;
+  font-size: small;
+}
+
+.itemReturn{
+  display: flex;
+  font-size: small;
+}
+
+.itemReturn span{
+  margin-right: 0.5rem;
+}
 
 @media screen and (max-width: 786px) {
+
+    .cartItemBase{
+      min-width: 100%;
+    }
 }

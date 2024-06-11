@@ -25,6 +25,8 @@ body {
   background: var(--bodybg);
 }
 
+
+/* To be  removed */
 span{
   color: var(--purple);
 }

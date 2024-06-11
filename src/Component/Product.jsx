@@ -5,6 +5,7 @@ import ProductDetail from '../Component/ProductDetail'
 import Cart from '../Pages/Cart'
 
 
+
 const sample_prd_img = 'https://cpimg.tistatic.com/05772391/b/4/Canon-Printer-Ink.jpg';
 
 let  a1 = '643e7a9fdb684bac5851d8e9';
