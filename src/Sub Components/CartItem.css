@@ -22,7 +22,6 @@
 .prdDetail {
   display: flex;
   flex-direction: column;
-  align-items: last baseline;
   justify-content: center;
   gap: 5px;
   padding: 0 0.5rem;

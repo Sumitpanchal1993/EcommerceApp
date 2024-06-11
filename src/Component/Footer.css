@@ -1,0 +1,26 @@
+.footerBase{
+overflow: hidden;
+background: white;
+padding: 0.5rem;
+margin: 10px;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+
+.footerBase p,li {
+    font-size: smaller;
+    color: grey;
+}
+
+.footerBase ol{
+    list-style: decimal;
+    padding: 0.5rem 2rem;
+}
+
+.footerBase li{
+    margin: 0.5rem 0;
+}
+

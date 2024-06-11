@@ -1,0 +1,48 @@
+.homeBase{
+overflow: hidden;
+background: white;
+padding: 0.5rem;
+margin: 10px;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+width: 84%;
+overflow: hidden;
+}
+
+/* ----------Shop by category ------------ */
+
+.category{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    }
+    
+    .category>div {
+    box-shadow: 0 0 15px var(--bodybg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+.category>div:hover {
+    box-shadow: 0 0 15px var(--purple);
+    padding: 1rem;
+}
+.category img{
+    width: 12rem;
+}
+
+.category h3{
+    margin: 0.5rem;
+}
+
+@media screen and (max-width:786px) {
+    .category{
+        overflow: scroll;
+        margin: 10px 0;
+        width: 100%;
+    }
+}
