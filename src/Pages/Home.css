@@ -1,52 +1,65 @@
-.homeBase{
-overflow: hidden;
-background: white;
-padding: 0.5rem;
-margin: 10px;
-border-radius: 1rem;
-display: flex;
-flex-direction: column;
-gap: 1rem;
-width: 100%;
-overflow: hidden;
+.homeBase {
+  overflow: hidden;
+  background: white;
+  padding: 0.5rem 2rem;
+  margin: 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* ----------Shop by category ------------ */
 
-.category{
-    display: flex;
-    gap: 1rem;
-    text-align: center;
-    justify-content: space-evenly;
-    border-radius: 1rem;
-    padding: 1rem;
-    }
-    
-    .category>div {
-    box-shadow: 0 0 15px var(--bodybg);
-    padding: 1rem;
-    border-radius: 0.5rem;
+.category,
+.brand {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-x: scroll;
+ 
 
-}
-.category>div:hover {
-    box-shadow: 0 0 15px var(--purple);
-    padding: 1rem;
-}
-.category img{
-    width: 12rem;
+  /* transform: translateY(-50%); */
+  
 }
 
-.category h3{
-    margin: 0.5rem;
+.category > div,
+.brand > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 15px var(--bodybg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.category > div:hover,
+.brand > div:hover {
+  box-shadow: 0 0 15px var(--purple);
+  padding: 1rem;
+}
+.category img {
+  width: 12rem;
 }
 
-@media screen and (max-width:786px) {
-    .homeBase{
-        width: 100%;
-    }
-    .category{
-        overflow: scroll;
-        margin: 10px 0;
-        
-    }
+.category h3 {
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 786px) {
+  .homeBase {
+    width: 100%;
+  }
+  .category {
+    overflow: scroll;
+    margin: 10px 0;
+  }
+}
+
+.brand img {
+  width: 8rem;
 }
