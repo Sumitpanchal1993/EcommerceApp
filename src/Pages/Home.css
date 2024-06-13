@@ -7,7 +7,7 @@ border-radius: 1rem;
 display: flex;
 flex-direction: column;
 gap: 1rem;
-width: 84%;
+width: 100%;
 overflow: hidden;
 }
 
@@ -19,6 +19,7 @@ overflow: hidden;
     text-align: center;
     justify-content: space-evenly;
     border-radius: 1rem;
+    padding: 1rem;
     }
     
     .category>div {
@@ -40,9 +41,12 @@ overflow: hidden;
 }
 
 @media screen and (max-width:786px) {
+    .homeBase{
+        width: 100%;
+    }
     .category{
         overflow: scroll;
         margin: 10px 0;
-        width: 100%;
+        
     }
 }
