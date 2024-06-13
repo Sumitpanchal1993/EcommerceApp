@@ -11,8 +11,10 @@ function Home() {
   return (
     <>
       <div className="homeBase">
+        <div className="trending">
+          <div><img src="" alt="" /></div>
+        </div>
         <div className="offer">Existing offers</div>
-        <div className="trending">Trending Now</div>
         <h3>Shop By Category</h3>
         <div className="category">
             <div>

@@ -53,6 +53,7 @@
 @media screen and (max-width: 786px) {
   .homeBase {
     width: 100%;
+    padding: 0;
   }
   .category {
     overflow: scroll;

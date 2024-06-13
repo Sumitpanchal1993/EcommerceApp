@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import "./UserLogin.css";
 import { Link } from "react-router-dom";
+import Model from "react-modal";
+import Login from "../Pages/Login";
 
 function UserLogin() {
   const [userName, setUserName] = useState("Sumit");
   const [userID, setUserID] = useState("Sumitpanchal08");
   const [userLogin, setUserLogin] = useState(false);
+  const [loginpopup, setLoginPopup] = useState(false);
 
   const handleLogin = () => {
     setUserLogin(true);
+    setLoginPopup(true)
   };
 
 
@@ -37,8 +41,8 @@ function UserLogin() {
             </button>
             <div className="dropdown">
               <ul>
-                <li><Link>My Profile</Link></li>
-                <li><Link>Orders</Link></li>
+                <li><Link to={'/myprofile'}>My Profile</Link></li>
+                <li><Link to={'/myorder'}>Orders</Link></li>
                 <li><Link to={"/cart"}>Cart</Link></li>
                 <li><Link>Wishlist</Link></li>
                 <li><Link onClick={()=>{setUserLogin(false);}}>Log Out</Link></li>                
@@ -51,6 +55,12 @@ function UserLogin() {
           </button>
         )}
       </div>
+      <Model isOpen={loginpopup}>
+      <div className="model">
+        <Login/>
+
+      </div>
+      </Model>
     </>
   );
 }
