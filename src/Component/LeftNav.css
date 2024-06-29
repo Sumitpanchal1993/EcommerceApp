@@ -1,6 +1,6 @@
 .leftOption {
   overflow: hidden;
-  width: max-content;
+  min-width: max-content;
   background: white;
   padding: 0.5rem;
   margin: 10px;

@@ -1,0 +1,20 @@
+.allProductsBase{
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    padding: 1rem;
+}
+
+@media screen and (max-width:1024px) {
+    .allProductsBase{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width:786px) {
+    .allProductsBase{
+        display: grid;
+        grid-template-columns: repeat(1, auto); 
+        /* justify-content: space-around;*/
+        padding: 1rem;
+    }
+}

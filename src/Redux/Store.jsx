@@ -1,11 +1,10 @@
-import { legacy_createStore as createStore } from "redux";
+import { configureStore } from '@reduxjs/toolkit'
+import redux_cart from './Reducer/Redux_Cart'
+import redux_login_state from './Reducer/Redux_Login'
 
-import rootReducer from "../Redux/Reducer/RootReducer";
-
-const store = createStore(rootReducer)
-
-export default store
-
-
-
-// , +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+export default configureStore({
+  reducer: {
+    redux_cart: redux_cart,
+    redux_login_state: redux_login_state,
+  },
+})

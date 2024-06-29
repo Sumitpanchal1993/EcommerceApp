@@ -6,6 +6,7 @@ import Cart from "./Pages/Cart";
 import Home from "./Pages/Home";
 import Footer from "./Component/Footer";
 import Profile from "./Pages/Profile";
+import AllProducts from "./Pages/AllProducts";
 
 // export CartContext = createContext();
 
@@ -22,6 +23,7 @@ function App() {
             <Route path={"/"} element={<Home />}></Route>
             <Route path={"/cart"} element={<Cart />}></Route>
             <Route path={"/myprofile"} element={<Profile />}></Route>
+            <Route path={"/products"} element={<AllProducts />}></Route>
           </Routes>
         </main>
         <footer>

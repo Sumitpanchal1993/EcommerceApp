@@ -55,12 +55,12 @@ function UserLogin() {
           </button>
         )}
       </div>
-      <Model isOpen={loginpopup}>
+      {/* <Model isOpen={loginpopup}>
       <div className="model">
         <Login/>
 
       </div>
-      </Model>
+      </Model> */}
     </>
   );
 }

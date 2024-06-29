@@ -2,7 +2,7 @@ import React from "react";
 import userLogo from "../Media/Userlogo.jpg";
 import "./CartItem.css";
 
-function CartItem() {
+function CartItem({itemData}) {
   return (
     <>
 
@@ -39,7 +39,7 @@ function CartItem() {
         </div>
         <div className="itemPrice">
           <span>
-            <strong>Rs 650</strong>
+            <strong>Rs {itemData.price}</strong>
           </span>
           <span>
             <s>Rs 1500</s>
