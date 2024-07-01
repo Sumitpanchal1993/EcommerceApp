@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux"; //to see the current getValue
+//import { useDispatch } from "react-redux"; //to see the current getValue
 import ProductCard from "../Sub Components/ProductCard";
 import "./AllProducts.css";
+import { useSelector } from "react-redux";
 
 function AllProducts() {
   const [fetchData, setFetchData] = useState([]);
-  const dispatch = useDispatch();
+  // const cartData = useSelector((state)=>{console.log(state.redux_cart)})
+  // const dispatch = useDispatch();
   useEffect(() => {
     fetch("https://dummyjson.com/products")
       .then((rawdata) => rawdata.json())
@@ -19,7 +21,7 @@ function AllProducts() {
     <>
       <div className="allProductsBase">
         {fetchData.map((item) => {
-          return <ProductCard item={item} />;
+          return <ProductCard item={item} key={item.id}/>;
         })}
       </div>
     </>

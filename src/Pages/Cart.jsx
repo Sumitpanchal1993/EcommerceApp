@@ -7,14 +7,12 @@ import { useSelector } from "react-redux";
 function Cart() {
 const getStoreData = useSelector((state)=>{return state.redux_cart})
 
-console.log(getStoreData)
-
   return (
     <div className="cartBase">
       <div>
       {getStoreData.map((item)=>{
         return(
-        <CartItem itemData ={item}/>
+        <CartItem itemData ={item} key={item.id}/>
         )
       })}
      

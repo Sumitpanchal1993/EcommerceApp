@@ -9,6 +9,7 @@
     border-radius: 1rem;
     box-shadow: 0 0 10px 5px var(--bodybg);
     text-align: center;
+    width: max-content;
 }
 
 

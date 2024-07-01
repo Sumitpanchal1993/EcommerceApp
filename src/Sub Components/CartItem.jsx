@@ -1,20 +1,23 @@
 import React from "react";
 import userLogo from "../Media/Userlogo.jpg";
 import "./CartItem.css";
+import {REMOVE_FROM_CART } from "../Redux/Reducer/Redux_Cart";
+import { useDispatch } from "react-redux";
 
 function CartItem({itemData}) {
+  const dispatchAction =useDispatch()
   return (
     <>
 
     <div className="cartItemBase">
       <div className="prdImage">
-        <img src={userLogo} alt="" />
+        <img src={itemData.images[0]} alt="" />
       </div>
 
       <div className="prdDetail">
-        <h4>Product Title</h4>
-        <p>Detail of the Product like companty Brand etc</p>
-        <p>Seller Detail</p>
+        <h4>{itemData.title}</h4>
+        <p>{itemData.description}</p>
+        <p>{itemData.brand}</p>
         <div className="selection">
           <span>
             <label htmlFor="size">Sizes</label>
@@ -42,15 +45,15 @@ function CartItem({itemData}) {
             <strong>Rs {itemData.price}</strong>
           </span>
           <span>
-            <s>Rs 1500</s>
+            <s>Rs {itemData.price}</s>
           </span>
-          <span>65% OFF</span>
+          <span>{Math.ceil(itemData.discountPercentage)}%</span>
         </div>
         <div className="itemReturn">
           <span><strong>14 days</strong></span> 
           <span>return available</span>
         </div>
-        <div><button className="mybtn">Remove</button></div>
+        <div><button className="mybtn" onClick={()=>{dispatchAction(REMOVE_FROM_CART(itemData))}}>Remove</button></div>
       </div>
     </div>
     </>

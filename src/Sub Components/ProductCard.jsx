@@ -1,6 +1,11 @@
 import React from "react";
 import "./ProductCard.css";
+import { ADD_TO_CART, REMOVE_FROM_CART } from "../Redux/Reducer/Redux_Cart";
+import { useDispatch } from "react-redux";
+
 function ProductCard({ item }) {
+  const dispatchAction =useDispatch()
+
   return (
     <>
       <div className="productcardbase">
@@ -11,7 +16,7 @@ function ProductCard({ item }) {
           <h4>{item.title}</h4>
           <div className="itemPrice">
             <span>
-              <strong>Rs {(item.price * 15).toFixed(2)}</strong>
+              <strong>Rs {(item.price).toFixed(2)}</strong>
             </span>
             <span>
               <s>Rs 1500</s>
@@ -19,8 +24,8 @@ function ProductCard({ item }) {
             <span>{item.discountPercentage}% OFF</span>
           </div>
           <div className="button">
-            <button className="mybtn">Buy Now</button>
-            <button className="mybtn">Add To Cart</button>
+            <button className="mybtn" onClick={()=>{console.log('Bought')}}>Buy Now</button>
+            <button className="mybtn" onClick={()=>{dispatchAction(ADD_TO_CART(item))}}>Add To Cart</button>
           </div>
         </div>
       </div>

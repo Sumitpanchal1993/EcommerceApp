@@ -46,6 +46,18 @@
 
 @media screen and (max-width:786px) {
   .leftOption{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    box-shadow: 0 0 5px 0 var(--lgred);
+  }
+
+
+  .menuopt>a>p {
     display: none;
   }
 }
