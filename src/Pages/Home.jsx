@@ -8,6 +8,19 @@ import adidas from '../Media/Adidas_logo.png';
 import puma from '../Media/puma.png'
 
 function Home() {
+  fetch('https://dummyjson.com/auth/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      
+      username: 'emilys',
+      password: 'emilyspass',
+      expiresInMins: 30, // optional, defaults to 60
+    })
+  })
+  .then(res => res.json())
+  .then(console.log);
+
   return (
     <>
       <div className="homeBase">

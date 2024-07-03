@@ -25,6 +25,15 @@ body {
   background: var(--bodybg);
 }
 
+::-webkit-scrollbar{
+  /* background: transparent; */
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--purple);
+  border-radius: 1rem;
+}
 
 /* To be  removed */
 span{

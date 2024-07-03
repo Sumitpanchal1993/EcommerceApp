@@ -9,6 +9,28 @@
     margin: 0;
     padding: 0;
   }
+
+  .dropdown_btn img{
+    width: 40px;
+    /* padding-right: 10px; */
+  }
+
+  .badge{
+    position: relative;
+  }
+
+  .badge span{
+    position: absolute;
+    background: red;
+    top: -15%;
+    right: -15%;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    border-radius: 1rem;
+  }
+
   .headerRHS{
     display:flex;
     align-items: center;

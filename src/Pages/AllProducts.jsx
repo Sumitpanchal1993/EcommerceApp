@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "../Sub Components/ProductCard";
 import "./AllProducts.css";
 import { useSelector } from "react-redux";
+import ReactModal from "react-modal";
 
 function AllProducts() {
   const [fetchData, setFetchData] = useState([]);
-  // const cartData = useSelector((state)=>{console.log(state.redux_cart)})
-  // const dispatch = useDispatch();
+
   useEffect(() => {
     fetch("https://dummyjson.com/products")
       .then((rawdata) => rawdata.json())
@@ -17,13 +17,20 @@ function AllProducts() {
       });
   }, []);
 
+  const handleProductDetail = (item)=>{
+    console.log('this product is clicked', item)
+  }
+
   return (
     <>
       <div className="allProductsBase">
         {fetchData.map((item) => {
-          return <ProductCard item={item} key={item.id}/>;
+          return <ProductCard item={item} key={item.id}  handleProductDetail={handleProductDetail}/>;
         })}
       </div>
+      <ReactModal>
+        
+      </ReactModal>
     </>
   );
 }

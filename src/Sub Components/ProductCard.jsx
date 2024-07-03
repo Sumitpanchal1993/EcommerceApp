@@ -3,13 +3,16 @@ import "./ProductCard.css";
 import { ADD_TO_CART, REMOVE_FROM_CART } from "../Redux/Reducer/Redux_Cart";
 import { useDispatch } from "react-redux";
 
-function ProductCard({ item }) {
+function ProductCard({ item, handleProductDetail }) {
   const dispatchAction =useDispatch()
+
+
+
 
   return (
     <>
-      <div className="productcardbase">
-        <div className="productimage">
+      <div className="productcardbase" >
+        <div className="productimage" onClick={()=>{handleProductDetail(item)}}>
           <img src={item.images[0]} alt="" />
         </div>
         <div className="productdetail">
