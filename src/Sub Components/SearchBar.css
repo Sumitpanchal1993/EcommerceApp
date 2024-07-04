@@ -4,8 +4,9 @@
 
 .search button {
   position: absolute;
-  top: 0.6rem;
-  left: 1rem;
+  top: 30%;
+  left: 5%;
+
   border: none;
   cursor: pointer;  
 }
@@ -23,7 +24,7 @@
 
 @media screen and (max-width:786px) {
   .search input {
-    width: 9rem;
+    width: 90%;
 }
 }
   

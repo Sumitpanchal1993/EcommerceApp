@@ -2,7 +2,7 @@ import React from "react";
 import "./Bill.css";
 import { useSelector } from "react-redux";
 
-const platformFees = 15;
+const platformFees = 10;
 const shippingFees = 99;
 const couponDiscount = 50
 function sum(total, num) { 

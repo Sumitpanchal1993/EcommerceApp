@@ -1,5 +1,5 @@
 import React from "react";
-import userLogo from "../Media/Userlogo.jpg";
+// import userLogo from "../Media/Userlogo.jpg";
 import "./CartItem.css";
 import {REMOVE_FROM_CART } from "../Redux/Reducer/Redux_Cart";
 import { useDispatch } from "react-redux";

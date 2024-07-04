@@ -9,8 +9,6 @@ import Profile from "./Pages/Profile";
 import AllProducts from "./Pages/AllProducts";
 import Orders from "./Pages/Orders";
 
-// export CartContext = createContext();
-
 function App() {
   return (
     <>
@@ -29,7 +27,7 @@ function App() {
           </Routes>
         </main>
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </Router>
     </>

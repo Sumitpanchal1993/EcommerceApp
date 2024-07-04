@@ -1,48 +1,47 @@
+.headerRHS span {
+  cursor: pointer;
+  font-size: 2rem;
+}
 
-  .headerRHS span{
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  .dropdown_btn{
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-  }
+.dropdown_btn {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
 
-  .dropdown_btn img{
-    width: 40px;
-    /* padding-right: 10px; */
-  }
+.dropdown_btn img {
+  width: 40px;
+}
 
-  .badge{
-    position: relative;
-  }
+.badge {
+  position: relative;
+}
 
-  .badge span{
-    position: absolute;
-    background: red;
-    top: -15%;
-    right: -15%;
-    font-size: small;
-    font-weight: bold;
-    color: white;
-    padding: 4px;
-    border-radius: 1rem;
-  }
+.badge span {
+  position: absolute;
+  background: red;
+  top: -15%;
+  right: -15%;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  padding: 4px;
+  border-radius: 1rem;
+}
 
-  .headerRHS{
-    display:flex;
-    align-items: center;
-    gap: 1rem;
-  }
- .userDetail p{
-    font-size: smaller;
-    color: grey;
- }
+.headerRHS {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.userDetail p {
+  font-size: smaller;
+  color: grey;
+}
 
- .dropdown{
-  display:none;
+.dropdown {
+  display: none;
   position: absolute;
   top: 4.5rem;
   right: 1rem;
@@ -50,28 +49,27 @@
   border-radius: 0.5rem;
   z-index: 10;
   overflow: hidden;
-
- }
- .dropdown ul {
+}
+.dropdown ul {
   list-style: none;
- }
- .dropdown ul li{
+}
+.dropdown ul li {
   padding: 0.5rem;
   width: 100%;
- }
- .dropdown ul a{
+}
+.dropdown ul a {
   text-decoration: none;
   color: black;
   padding: 1rem;
- }
- .dropdown ul a:hover{
-    color: white;
- }
- .dropdown ul li:hover{
-    background: var(--purple);
- }
+}
+.dropdown ul a:hover {
+  color: white;
+}
+.dropdown ul li:hover {
+  background: var(--purple);
+}
 
-.model{
+.model {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,9 +77,8 @@
   height: 100%;
 }
 
-
- @media screen and (max-width:786px) {
-  .userDetail{
+@media screen and (max-width: 786px) {
+  .userDetail {
     display: none;
   }
- }
+}

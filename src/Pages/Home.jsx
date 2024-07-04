@@ -1,101 +1,125 @@
 import React from "react";
 import "./Home.css";
-import men from'../Media/Mens.jpg';
-import women from'../Media/women.jpeg';
-import kids from'../Media/kids.jpeg';
-import nike from '../Media/nike.jpg'
-import adidas from '../Media/Adidas_logo.png';
-import puma from '../Media/puma.png'
+import men from "../Media/Mens.jpg";
+import women from "../Media/women.jpeg";
+import kids from "../Media/kids.jpeg";
+import nike from "../Media/nike.jpg";
+import adidas from "../Media/Adidas_logo.png";
+import puma from "../Media/puma.png";
 
 function Home() {
-  fetch('https://dummyjson.com/auth/login', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      
-      username: 'emilys',
-      password: 'emilyspass',
-      expiresInMins: 30, // optional, defaults to 60
-    })
-  })
-  .then(res => res.json())
-  .then(console.log);
-
   return (
     <>
       <div className="homeBase">
         <div className="trending">
-          <div><img src="" alt="" /></div>
+          <div>
+            <img src="" alt="" />
+          </div>
         </div>
         <div className="offer">Existing offers</div>
         <h3>Shop By Category</h3>
         <div className="category">
+          <div>
             <div>
-                <div><img src={men} alt="" /></div>
-                <h3>Mens Wear</h3>
+              <img src={men} alt="" />
             </div>
+            <h3>Mens Wear</h3>
+          </div>
+          <div>
             <div>
-                <div><img src={women} alt="" /></div>
-                <h3>Womens Wear</h3>
+              <img src={women} alt="" />
             </div>
+            <h3>Womens Wear</h3>
+          </div>
+          <div>
             <div>
-                <div><img src={kids} alt="" /></div>
-                <h3>Kids Wear</h3>
+              <img src={kids} alt="" />
             </div>
+            <h3>Kids Wear</h3>
+          </div>
+          <div>
             <div>
-                <div><img src={kids} alt="" /></div>
-                <h3>Toddler Wear</h3>
+              <img src={kids} alt="" />
             </div>
+            <h3>Toddler Wear</h3>
+          </div>
         </div>
         <h3>Shop By Brand</h3>
         <div className="brand">
-            <div>
+          <div>
             <img src={nike} alt="" />
             <h4>Nike</h4>
-            </div>
-            <div>
+          </div>
+          <div>
             <img src={adidas} alt="" />
             <h4>Nike</h4>
-            </div>
-            <div>
+          </div>
+          <div>
             <img src={puma} alt="" />
             <h4>Nike</h4>
-            </div>
-            <div>
+          </div>
+          <div>
             <img src={puma} alt="" />
             <h4>Nike</h4>
-            </div>
-            <div>
+          </div>
+          <div>
             <img src={nike} alt="" />
             <h4>Nike</h4>
-            </div>
-            <div>
+          </div>
+          <div>
             <img src={nike} alt="" />
             <h4>Nike</h4>
-            </div>
-            <div>
+          </div>
+          <div>
             <img src={nike} alt="" />
             <h4>Nike</h4>
-            </div>
-           
+          </div>
         </div>
         <h3>Shop By Price Range</h3>
         <div className="pricerange category">
-            <div><h3>Upto 99</h3></div>
-            <div><h3>Upto 199</h3></div>
-            <div><h3>Upto 299</h3></div>
-            <div><h3>Upto 399</h3></div>
-            <div><h3>Upto 499</h3></div>
-            <div><h3>Upto 599</h3></div>
-            <div><h3>Upto 699</h3></div>
-            <div><h3>Upto 799</h3></div>
-            <div><h3>Upto 899</h3></div>
-            <div><h3>Upto 999</h3></div>
-            <div><h3>Upto 1099</h3></div>
-            <div><h3>Upto 2099</h3></div>
-            <div><h3>Upto 3099</h3></div>
-            <div><h3>Upto 4099</h3></div>
-            </div>
+          <div>
+            <h3>Upto 99</h3>
+          </div>
+          <div>
+            <h3>Upto 199</h3>
+          </div>
+          <div>
+            <h3>Upto 299</h3>
+          </div>
+          <div>
+            <h3>Upto 399</h3>
+          </div>
+          <div>
+            <h3>Upto 499</h3>
+          </div>
+          <div>
+            <h3>Upto 599</h3>
+          </div>
+          <div>
+            <h3>Upto 699</h3>
+          </div>
+          <div>
+            <h3>Upto 799</h3>
+          </div>
+          <div>
+            <h3>Upto 899</h3>
+          </div>
+          <div>
+            <h3>Upto 999</h3>
+          </div>
+          <div>
+            <h3>Upto 1099</h3>
+          </div>
+          <div>
+            <h3>Upto 2099</h3>
+          </div>
+          <div>
+            <h3>Upto 3099</h3>
+          </div>
+          <div>
+            <h3>Upto 4099</h3>
+          </div>
+        </div>
       </div>
     </>
   );
